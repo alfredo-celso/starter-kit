@@ -1,0 +1,29 @@
+# Enviroment configuration
+NODE_ENV=development
+PORT=3500
+IMAGE_LOGO='LOGO.png'
+WEBS_SERVER='localhost'
+APP_NAME='BACKEND - STARTER-KIT'
+APP_SLOGAN='STARTER-KIT 2026'
+APP_TITLE='Welcome to Starter-Kit package'
+SESSION_SECRET='09e80e79-3b0b-11f1-ab25-e82aea0ba9e6'
+
+# LANGS EN=English, PL=Polski, IT=Italiano, ES=Espańol
+DEFAULT_LANG='en'
+
+# Version of the web app
+N_YEAR=2026
+APP_VERSION='1.0.0'
+
+# Database configuration
+DB_HOST='localhost'
+DB_USER='admin'
+DB_PASSWORD='MariaDB'
+DB_NAME='starter_kit'
+DB_INTERVAL_EXP=15
+
+# Email setup (Gmail)
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=465
+SMTP_USER=email@gmail.com
+SMTP_PASS='xxxx xxxx xxxx xxxx'
