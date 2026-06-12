@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/index/start">{{t "option1"}}</a>
+        </li>
+      </ul>
+
+      <span class="nav-item">
+        <a class="nav-link" href="/login/start">{{t "option2"}}</a>
+      </span>
+      <span class="nav-item">
+        <a class="nav-link" href="/logout/start">{{t "option3"}}</a>
+      </span>
+
+      <span class="nav-item dropdown ms-auto">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          {{t "option9"}}
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="?lng=en">English</a></li>
+          <li><a class="dropdown-item" href="?lng=pl">Polski</a></li>
+          <li><a class="dropdown-item" href="?lng=it">Italiano</a></li>
+          <li><a class="dropdown-item" href="?lng=es">Espańol</a></li>
+        </ul>
+      </span>
+
+      <span class="nav-item">
+        <a class="nav-link" href="#"> | {{t "app_lang"}}</a> 
+      </span>
+
+      <span class="nav-item">
+        <a class="navbar-brand" href="#">
+          <img src="{{t "app_flag"}}" alt="Country flag" width="24" height="24">
+        </a>
+        <label class="form-label"> User: {{ userEmail }} </label>
+      </span>
+
+    </div>
+  </div>
+</nav>

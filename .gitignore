@@ -1,0 +1,9 @@
+# Ignore Node dependecies
+**/node_modules/
+
+# Ignore variables
+**/border-env
+**/.env
+
+# Ignore sistem files
+.DS_Store
