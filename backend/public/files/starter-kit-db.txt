@@ -1,0 +1,24 @@
+CREATE DATABASE starter_kit;
+
+
+CREATE TABLE users (n_id INT AUTO_INCREMENT PRIMARY KEY, s_id varchar(50), s_email VARCHAR(100) NOT NULL, s_token_confirmation VARCHAR(50), d_created_date DATETIME default current_timestamp, s_ip_registration varchar(50), d_confirm_date datetime,  b_active tinyint(1) default 0);
+
+
+
+CREATE TABLE auth_codes (
+	n_id INT AUTO_INCREMENT PRIMARY KEY,
+	s_email VARCHAR(100) NOT NULL,
+	s_code VARCHAR(6) NOT NULL, -- 6 digits code
+	d_expires_at DATETIME NOT NULL, -- Expire time (Np: Now + 15 min)
+	b_used TINYINT(1) DEFAULT 0, -- To be sure code is used only ONLY ONE TIME
+	d_created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE auth_codes (n_id INT AUTO_INCREMENT PRIMARY KEY, s_email VARCHAR(100) NOT NULL, s_code VARCHAR(6) NOT NULL, d_expires_at DATETIME NOT NULL, b_used TINYINT(1) DEFAULT 0, d_created_at DATETIME DEFAULT CURRENT_TIMESTAMP);
+
+
+
+
+
+
+
